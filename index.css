@@ -134,17 +134,67 @@ body{
 /* HONGO MARIO */
 
 .mushroom{
-
+  margin: 120px;
+  /* background-color: #000; */
+  width: max-content;
+  position: relative;
+  filter: drop-shadow(0 0 4px);
 }
 
 .mushroom-head{
+  width: 260px;
+  height: 200px;
+  background-color: #c53b4a;
+  border-radius: 50%;
+  /* box-shadow: 0 0 4px; */
+  overflow: hidden;
+  position: relative;
+}
 
+.mushroom-head::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 140px 0, -140px 0;
+  color: #fff;
 }
 
 .mushroom-face{
-
+  position: absolute;
+  background-color: #fadac1;
+  width: 155px;
+  height: 90px;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 50% 50% / 26% 26% 30% 30%;
 }
 
 .mushroom-eye{
-  
+  background-color: #000;
+  border-radius: 50%;
+  width: 14px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  box-shadow: 61px 0;
+}
+
+.mushroom-eye::before{
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 4px;
+  height: 10px;
+  background-color: #d2cfc6;
+  border-radius: 30px;
+  box-shadow: 61px 0 #d2cfc6;
 }
