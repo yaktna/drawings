@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ccc;
+}
+
+/* NETHERLANDS FLAG */
+
+.flag{
+  width: 200px;
+  height: 50px;
+  background-color: #ae1c28;
+  margin: 70px;
+  box-shadow: 0 50px #fff, 0 100px #21468e;
+}
+
+/* PACMAN */
+
+.pacman{
+  position: relative;
+  margin: 190px;
+  width: 100px;
+  border-top: 100px solid yellow;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid yellow;
+  border-left: 100px solid yellow;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 4px);
+}
+
+.pacman::before{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  top: -45px;
+  right: 10px;
+}
+
+/* NOTEBOOK */
+
+.notebook{
+  width: 300px;
+  height: 400px;
+  background-color: #7765b5;
+  margin: 50px;
+  border:2px solid rgb(107 114 128);
+  border-radius: 0.8em;
+  box-shadow: 10px 10px #fff,
+              20px 20px rgba(0, 0, 0, 0.116);
+  position: relative;
+}
+
+.circles{
+  position: absolute;
+  top: 30px;
+  left: 7px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px, 0 240px, 0 280px, 0 320px;
+  color: #fff;
+}
+
+.line{
+  position: absolute;
+  top: 4px;
+  left: -20px;
+  width: 30px;
+  height: 8px;
+  background-color: #319073;
+  border-radius: 0.8em;
+  box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px, 0 240px, 0 280px, 0 320px;
+  color: #319073;
+}
+
+/* POKEBOLA */
+
+.pokebola{
+  display: flex;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 4px solid #000;
+  border-radius: 50%;
+  margin: 70px auto;
+  background-image: linear-gradient(#ff3e32 40%, #565658 40%, #565658 60%, #fff 60%);
+  overflow: hidden;
+  margin-left: 30px;
+}
+
+.pokebola-line{
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  top: 40%;
+  box-shadow: 0 44px;
+}
+
+.pokebola-circles{
+  margin: auto;
+  width: 95px;
+  height: 95px;
+  border: 4px solid;
+  border-radius: 50%;
+  background-color: #565658;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+}
+
+.pokebola-circles::before{
+  width: 60px;
+  height: 60px;
+}
+.pokebola-circles::after{
+  width: 28px;
+  height: 28px;
+}
+
+.pokebola-circles::after,.pokebola-circles::before{
+  content: "";
+  background-color: #fff;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border-radius: 50%;
+  border: inherit;
+}
+
+/* HONGO MARIO */
+
+.mushroom{
+
+}
+
+.mushroom-head{
+
+}
+
+.mushroom-face{
+
+}
+
+.mushroom-eye{
+  
+}
