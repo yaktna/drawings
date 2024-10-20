@@ -2,6 +2,7 @@ body{
   margin: 0;
   box-sizing: border-box;
   background-color: #ccc;
+  margin-bottom: 1000px;
 }
 
 /* NETHERLANDS FLAG */
@@ -197,4 +198,98 @@ body{
   background-color: #d2cfc6;
   border-radius: 30px;
   box-shadow: 61px 0 #d2cfc6;
+}
+
+/* PANDA */
+
+.panda{
+  margin: 80px;
+  width: 200px;
+  height: 150px;
+  border: 6px solid;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ears{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #000;
+  border-radius: 50%;
+  top: -20px;
+  left: 0;
+  box-shadow: 118px 0;
+  z-index: -1;
+}
+.left-eye{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 30px;
+  left: 20px;
+  filter: drop-shadow(0 0 4px);
+}
+.pupils{
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  box-shadow: -15px 20px 0 -8px #fff;
+}
+
+.right-eye{
+  left: unset;
+  right: 20px;
+}
+
+/* .right-eye{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 30px;
+  left: 120px;
+} */
+
+.nose{
+  width: 30px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+}
+
+.nose::before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 14px;
+  background-color: #000;
+  top: 20px;
+  left: 12px;
+}
+
+.nose::after{
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 20px;
+  border: 6px solid #000;
+  top: 20px;
+  left: -5px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-top: 0;
 }
